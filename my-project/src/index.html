@@ -8,8 +8,115 @@
     <title>Sun Sushi</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline text-green-500">Hello world!</h1>
-    <a href="#">En länk</a>
+    <header>
+      <nav class="bg-black p-4">
+        <div class="flex justify-between items-center">
+          <a href="/" class="md:ml-10 lg:ml-20">
+            <img
+              src="/images/logo.png"
+              alt="Sun Sushi logotyp"
+              class="w-[170px]"
+            />
+          </a>
+
+          <!-- Hamburger icon -->
+          <button
+            id="hamburger-icon"
+            class="text-white focus:outline-none sm:hidden"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+
+          <div
+            id="navbar-links"
+            class="hidden sm:flex space-x-5 md:mr-10 lg:mr-20"
+          >
+            <a
+              href="/sushi.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Sushi</a
+            >
+            <a
+              href="/pokebowl.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Poké bowl</a
+            >
+            <a
+              href="/varmratter.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Varmrätter</a
+            >
+            <a
+              href="/boba.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Boba Tea</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="fixed inset-0 bg-black bg-opacity-95 hidden sm:hidden"
+        >
+          <div class="flex justify-end p-4">
+            <button id="close-mobile-menu-icon" class="text-white">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <a
+              href="/src/sushi.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Sushi</a
+            >
+            <a
+              href="/src/pokebowl.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Poké bowl</a
+            >
+            <a
+              href="/src/varmratter.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Varmrätter</a
+            >
+            <a
+              href="/src/boba.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Boba Tea</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
