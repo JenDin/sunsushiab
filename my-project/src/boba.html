@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sun Sushi</title>
+  </head>
+  <body class="flex flex-col min-h-screen bg-lightGray">
+    <header>
+      <nav class="bg-black p-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <a href="/" class="md:ml-10 lg:ml-20">
+            <img
+              src="/images/logo.png"
+              alt="Sun Sushi logotyp"
+              class="w-[170px]"
+            />
+          </a>
+
+          <!-- Hamburger icon -->
+          <button
+            id="hamburger-icon"
+            class="text-white focus:outline-none sm:hidden"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Nav links - large screen -->
+          <div
+            id="navbar-links"
+            class="hidden sm:flex space-x-5 md:mr-10 lg:mr-20"
+          >
+            <a
+              href="sushi.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Sushi</a
+            >
+            <a
+              href="pokebowl.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Poké bowl</a
+            >
+            <a
+              href="varmratter.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Varmrätter</a
+            >
+            <a
+              href="boba.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Boba Tea</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="fixed inset-0 bg-black bg-opacity-95 hidden sm:hidden"
+        >
+          <div class="flex justify-end p-4">
+            <button id="close-mobile-menu-icon" class="text-white">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Nav links - mobile screen -->
+          <div class="flex flex-col items-center">
+            <a
+              href="sushi.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Sushi</a
+            >
+            <a
+              href="pokebowl.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Poké bowl</a
+            >
+            <a
+              href="varmratter.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Varmrätter</a
+            >
+            <a
+              href="boba.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Boba Tea</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-1">
+		<div>
+			<h1
+			  class="text-4xl md:text-5xl font-bold text-black text-center mt-8 mb-8"
+			>
+			  Boba Tea
+			</h1>
+	
+			<section class="p-6  md:max-w-[900px] md:m-auto">
+	
+	<div class="md:flex md:justify-between md:items-center md:gap-8 mb-12 md:mb-8">
+		<div class="mb-4 md:w-[60%]">
+			<h2 class="text-xl md:text-2xl font-bold">Flavored Tea</h2>
+			<p class="text-sm">700 ml - 59 kr</p>
+			<p class="text-sm mb-2">500 ml - 54 kr</p>
+			<ul class="divide-y divide-dashed divide-black">
+				<li class="py-1"><span class="text-sm font-semibold">T1.</span> Green Apple - Green Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T2.</span> Pink Guava - Green Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T3.</span> Peach - Black Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T4.</span> Mango - Green Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T5.</span> Strawberry Green / Oolong Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T6.</span> Blueberry - Black / Oolong Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T7.</span> Lychee - Green / Black Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T8.</span> Passion Fruit - Green / Oolong Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T9.</span> Rose - Green  Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">T10.</span> Kumquat Lemon - Green / Oolong Tea</li>
+			</ul>
+			</div>
+			<div class=" md:block w-[50%] md:w-[40%]">
+				<img src="images/varmratter/teriyaki.webp" alt="">
+			</div>
+	</div>
+	
+	<div class="md:flex md:justify-between md:items-center md:gap-8 mb-12 md:mb-8">
+		<div class="mb-4 md:w-[60%]">
+			<h2 class="text-xl md:text-2xl font-bold">Special Tea</h2>
+			<p class="text-sm">700 ml - 69 kr</p>
+			<p class="text-sm mb-2">500 ml - 64 kr</p>
+			<ul class="divide-y divide-dashed divide-black">
+				<li class="py-1"><span class="text-sm font-semibold">A1.</span> Dancing Black Pearl</li>
+				<li class="py-1"><span class="text-sm font-semibold">A2.</span> Strawberry Guava Jasmine Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">A3.</span> Special Peach Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">A4.</span> Mango Colada</li>
+				<li class="py-1"><span class="text-sm font-semibold">A5.</span> Tropical Fruit Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">A6.</span> Passion Kumquat Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">A7.</span> Rose Lychee Tea</li>
+			</ul>
+			</div>
+			<div class=" md:block w-[50%] md:w-[40%]">
+				<img src="images/varmratter/teriyaki.webp" alt="">
+			</div>
+	</div>
+	
+	<div class="md:flex md:justify-between md:items-center md:gap-8 mb-12 md:mb-8">
+		<div class="mb-4 md:w-[60%]">
+			<h2 class="text-xl md:text-2xl font-bold">Milk Tea</h2>
+			<p class="text-sm">700 ml - 64 kr</p>
+			<p class="text-sm mb-2">500 ml - 59 kr</p>
+			<ul class="divide-y divide-dashed divide-black">
+				<li class="py-1"><span class="text-sm font-semibold">M1.</span> Black Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M2.</span> Green Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M3.</span> Oolong Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M4.</span> Mango Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M5.</span> Strawberry Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M6.</span> Blueberry Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M7.</span> Chocolate Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M8.</span> Matcha Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M9.</span> Taro Milk Tea</li>
+				<li class="py-1"><span class="text-sm font-semibold">M10.</span> Coconut Milk Tea</li>
+			</ul>
+			</div>
+			<div class=" md:block w-[50%] md:w-[40%]">
+				<img src="images/varmratter/teriyaki.webp" alt="">
+			</div>
+	</div>
+	
+	
+	<div class="md:flex md:justify-between md:items-center md:gap-8 mb-12 md:mb-8">
+		<div class="mb-4 md:w-[60%]">
+			<h2 class="text-xl md:text-2xl font-bold">Brown Sugar Tapioca</h2>
+			<p class="text-sm">700 ml - 64 kr</p>
+			<p class="text-sm mb-2">500 ml - 59 kr</p>
+			<ul class="divide-y divide-dashed divide-black">
+				<li class="py-1"><span class="text-sm font-semibold">B3.</span> Brown Sugar Tapioca Milk</li>
+				<li class="py-1"><span class="text-sm font-semibold">B4.</span> Brown Sugar Tapioca Milk Coffee</li>
+				<li class="py-1"><span class="text-sm font-semibold">B5.</span> Brown Sugar Tapioca Milk Strawberry</li>
+				<li class="py-1"><span class="text-sm font-semibold">B6.</span> Brown Sugar Tapioca Milk Blueberry</li>
+				<li class="py-1"><span class="text-sm font-semibold">B7.</span> Brown Sugar Tapioca Milk Chocolate</li>
+				<li class="py-1"><span class="text-sm font-semibold">B8.</span> Brown Sugar Tapioca Milk Matcha</li>
+				<li class="py-1"><span class="text-sm font-semibold">B9.</span> Brown Sugar Tapioca Milk Taro</li>
+			</ul>
+			</div>
+			<div class=" md:block w-[50%] md:w-[40%]">
+				<img src="images/varmratter/teriyaki.webp" alt="">
+			</div>
+	</div>
+	
+	<div class="md:flex md:justify-between md:items-center md:gap-8 mb-12 md:mb-8">
+		<div class="mb-4 md:w-[60%]">
+			<h2 class="text-xl md:text-2xl font-bold">Yakult</h2>
+			<p class="text-sm">700 ml - 64 kr</p>
+			<p class="text-sm mb-2">500 ml - 59 kr</p>
+			<ul class="divide-y divide-dashed divide-black">
+				<li class="py-1"><span class="text-sm font-semibold">K1.</span> Green Apple Yakult</li>
+				<li class="py-1"><span class="text-sm font-semibold">K2.</span> Honey Melon Yakult</li>
+				<li class="py-1"><span class="text-sm font-semibold">K3.</span> Peach Yakult</li>
+				<li class="py-1"><span class="text-sm font-semibold">K4.</span> Mango Yakult</li>
+				<li class="py-1"><span class="text-sm font-semibold">K5.</span> Strawberry Yakult</li>
+				<li class="py-1"><span class="text-sm font-semibold">K6.</span> Blueberry Yakult</li>
+			</ul>
+			</div>
+			<div class=" md:block w-[50%] md:w-[40%]">
+				<img src="images/varmratter/teriyaki.webp" alt="">
+			</div>
+	</div>
+	
+	<div class="md:flex md:justify-between md:items-center md:gap-8 mb-12 md:mb-8">
+		<div class="mb-4 md:w-[60%]">
+			<h2 class="text-xl md:text-2xl font-bold">Soda</h2>
+			<p class="text-sm">700 ml - 64 kr</p>
+			<p class="text-sm mb-2">500 ml - 59 kr</p>
+			<ul class="divide-y divide-dashed divide-black">
+				<li class="py-1"><span class="text-sm font-semibold">S1.</span> Green Apple Soda</li>
+				<li class="py-1"><span class="text-sm font-semibold">S2.</span> Hawaii Soda (Honey - Kumquat)</li>
+				<li class="py-1"><span class="text-sm font-semibold">S3.</span> Peach Soda</li>
+				<li class="py-1"><span class="text-sm font-semibold">S4.</span> Mango Soda</li>
+				<li class="py-1"><span class="text-sm font-semibold">S5.</span> Strawberry Soda</li>
+				<li class="py-1"><span class="text-sm font-semibold">S6.</span> Blueberry Soda</li>
+				<li class="py-1"><span class="text-sm font-semibold">S7.</span> Lychee in Blue Soda</li>
+				<li class="py-1"><span class="text-sm font-semibold">S8.</span> Passion Kumquat Soda</li>
+			</ul>
+			</div>
+			<div class=" md:block w-[50%] md:w-[40%]">
+				<img src="images/varmratter/teriyaki.webp" alt="">
+			</div>
+	</div>
+	
+	</section>
+	</main>
+    <!-- Footer -->
+    <footer class="bg-black text-white p-8">
+      <div class="md:flex justify-center gap-12">
+        <div class="mb-6">
+          <h3 class="text-md font-bold mb-1">
+            <i class="fas fa-thin fa-location-dot"></i> Adress
+          </h3>
+          <p class="text-sm">Centralstationen</p>
+          <p class="text-sm">Drottningtorget 4</p>
+          <p class="text-sm">411 03 Göteborg</p>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-md font-bold mb-1">
+            <i class="fas fa-thin fa-phone"></i> Telefon
+          </h3>
+          <p class="text-sm">031 - 15 91 80</p>
+        </div>
+        <div>
+          <h3 class="text-,d font-bold mb-1">
+            <i class="fas fa-thin fa-clock"></i> Öppettider
+          </h3>
+          <p class="text-sm">Måndag - Söndag</p>
+          <p class="text-sm">11:00 - 20:00</p>
+        </div>
+      </div>
+
+      <hr
+        class="md:w-96 md:m-auto my-6 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"
+      />
+
+      <p class="md:text-center md:mt-4">
+        Vi finns på Foodora, Uber Eats och Wolt!
+      </p>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
