@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sun Sushi</title>
+  </head>
+  <body class="flex flex-col min-h-screen bg-lightGray">
+    <header>
+      <nav class="bg-black p-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <a href="/" class="md:ml-10 lg:ml-20">
+            <img
+              src="/images/logo.png"
+              alt="Sun Sushi logotyp"
+              class="w-[170px]"
+            />
+          </a>
+
+          <!-- Hamburger icon -->
+          <button
+            id="hamburger-icon"
+            class="text-white focus:outline-none sm:hidden"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+
+          <!-- Nav links - large screen -->
+          <div
+            id="navbar-links"
+            class="hidden sm:flex space-x-5 md:mr-10 lg:mr-20"
+          >
+            <a
+              href="sushi.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Sushi</a
+            >
+            <a
+              href="pokebowl.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Poké bowl</a
+            >
+            <a
+              href="varmratter.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Varmrätter</a
+            >
+            <a
+              href="boba.html"
+              class="text-white text-lg hover:underline decoration-[#a50601] decoration-2"
+              >Boba Tea</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="fixed inset-0 bg-black bg-opacity-95 hidden sm:hidden"
+        >
+          <div class="flex justify-end p-4">
+            <button id="close-mobile-menu-icon" class="text-white">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Nav links - mobile screen -->
+          <div class="flex flex-col items-center">
+            <a
+              href="sushi.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Sushi</a
+            >
+            <a
+              href="pokebowl.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Poké bowl</a
+            >
+            <a
+              href="varmratter.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Varmrätter</a
+            >
+            <a
+              href="boba.html"
+              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              >Boba Tea</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-1">
+      <div>
+        <h1
+          class="text-4xl md:text-5xl font-bold text-black text-center mt-8 mb-8"
+        >
+          Poké bowl
+        </h1>
+
+        <section
+          class="p-6 md:grid md:grid-cols-2 md:gap-x-16 md-gap-y-2 md:max-w-6xl md:mx-auto mb-10"
+        >
+          <div
+            class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[65%]">
+              <h2 class="text-lg font-bold">Poké bowl med lax</h2>
+              <p class="italic text-md mb-4">
+                Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
+                sjögrässallad, cashewnötter, rostad lök, tångsallad och
+                marinerad lax. Toppas med chilimajonnäs och sesamfrön.
+              </p>
+              <p class="text-sm">135 / 139 kr</p>
+            </div>
+            <div class="w-[35%]">
+              <img
+                src="images/pokebowl/lax-poke.webp"
+                class="w-[100%]"
+                alt="En poké bowl fylld med ris, grönsaker och lax"
+              />
+            </div>
+          </div>
+
+          <div
+            class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[65%]">
+              <h2 class="text-lg font-bold">Poké bowl med friterad räka</h2>
+              <p class="italic text-md mb-4">
+                Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
+                sjögrässallad, cashewnötter, rostad lök och friterad räka.
+                Toppas med chilimajonnäs och sesamfrön.
+              </p>
+              <p class="text-sm">135 / 139 kr</p>
+            </div>
+            <div class="w-[35%]">
+              <img
+                src="images/pokebowl/tempura-poke.webp"
+                class="w-[100%]"
+                alt="En poké bowl fylld med ris, grönsaker och tempuraräkor"
+              />
+            </div>
+          </div>
+
+          <div
+            class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[65%]">
+              <h2 class="text-lg font-bold">Poké bowl med strimlad biff</h2>
+              <p class="italic text-md mb-4">
+                Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
+                sjögrässallad, cashewnötter, rostad lök, strimlad biff och
+                yakinikusås. Toppas med chilimajonnäs och sesamfrön.
+              </p>
+              <p class="text-sm">135 / 139 kr</p>
+            </div>
+            <div class="w-[35%]">
+              <img
+                src="images/pokebowl/biff-poke.webp"
+                class="w-[100%]"
+                alt="En poké bowl fylld med ris, grönsaker och biff"
+              />
+            </div>
+          </div>
+
+          <div
+            class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[65%]">
+              <h2 class="text-lg font-bold">Poké bowl med friterad kyckling</h2>
+              <p class="italic text-md mb-4">
+                Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
+                sjögrässallad, cashewnötter, rostad lök och friterad kyckling.
+                Toppas med chilimajonnäs och sesamfrön.
+              </p>
+              <p class="text-sm">135 / 139 kr</p>
+            </div>
+            <div class="w-[35%]">
+              <img
+                src="images/pokebowl/kyckling-poke.webp"
+                class="w-[100%]"
+                alt="En poké bowl fylld med ris, grönsaker och kyckling"
+              />
+            </div>
+          </div>
+
+          <div
+            class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
+          >
+            <div class="flex flex-col justify-between w-[65%]">
+              <h2 class="text-lg font-bold">Poké bowl med tofu (vegansk)</h2>
+              <p class="italic text-md mb-4">
+                Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
+                sjögrässallad, cashewnötter, rostad lök och friterad tofu.
+                Toppas med en vegansk sås och sesamfrön.
+              </p>
+              <p class="text-sm">130 / 135 kr</p>
+            </div>
+            <div class="w-[35%]">
+              <img
+                src="images/pokebowl/tofu-poke.webp"
+                class="w-[100%]"
+                alt="En poké bowl fylld med ris, grönsaker och tofu"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-black text-white p-8">
+      <div class="md:flex justify-center gap-12">
+        <div class="mb-6">
+          <h3 class="text-md font-bold mb-1">
+            <i class="fas fa-thin fa-location-dot"></i> Adress
+          </h3>
+          <p class="text-sm">Centralstationen</p>
+          <p class="text-sm">Drottningtorget 4</p>
+          <p class="text-sm">411 03 Göteborg</p>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-md font-bold mb-1">
+            <i class="fas fa-thin fa-phone"></i> Telefon
+          </h3>
+          <p class="text-sm">031 - 15 91 80</p>
+        </div>
+        <div>
+          <h3 class="text-,d font-bold mb-1">
+            <i class="fas fa-thin fa-clock"></i> Öppettider
+          </h3>
+          <p class="text-sm">Måndag - Söndag</p>
+          <p class="text-sm">11:00 - 20:00</p>
+        </div>
+      </div>
+
+      <hr
+        class="md:w-96 md:m-auto my-6 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"
+      />
+
+      <p class="md:text-center md:mt-4">
+        Vi finns på Foodora, Uber Eats och Wolt!
+      </p>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -15,6 +15,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         sushi: resolve(__dirname, "src/sushi.html"),
+        poke: resolve(__dirname, "src/pokebowl.html"),
+        varmratter: resolve(__dirname, "src/varmratter.html"),
+        boba: resolve(__dirname, "src/boba.html"),
       },
     },
   },
