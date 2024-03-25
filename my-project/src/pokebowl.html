@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Sun Sushi</title>
+    <title>Sun Sushi - Poké bowl</title>
   </head>
-  <body class="flex flex-col min-h-screen bg-lightGray">
+  <body class="flex flex-col min-h-screen bg-lightGray font-noto">
     <header>
       <nav class="bg-black p-4">
         <div class="flex justify-between items-center">
@@ -122,7 +136,7 @@
     <main class="flex-1">
       <div>
         <h1
-          class="text-4xl md:text-5xl font-bold text-black text-center mt-8 mb-8"
+          class="text-5xl md:text-7xl text-black text-center mt-8 mb-8 font-teko font-bold"
         >
           Poké bowl
         </h1>
@@ -134,13 +148,13 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Poké bowl med lax</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Poké bowl med lax</h2>
+              <p class="text-base mb-4">
                 Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
                 sjögrässallad, cashewnötter, rostad lök, tångsallad och
                 marinerad lax. Toppas med chilimajonnäs och sesamfrön.
               </p>
-              <p class="text-sm">135 / 139 kr</p>
+              <p class="text-base font-medium">135 / 139 kr</p>
             </div>
             <div class="w-[35%]">
               <img
@@ -155,13 +169,15 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Poké bowl med friterad räka</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">
+                Poké bowl med friterad räka
+              </h2>
+              <p class="text-base mb-4">
                 Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
                 sjögrässallad, cashewnötter, rostad lök och friterad räka.
                 Toppas med chilimajonnäs och sesamfrön.
               </p>
-              <p class="text-sm">135 / 139 kr</p>
+              <p class="text-base font-medium">135 / 139 kr</p>
             </div>
             <div class="w-[35%]">
               <img
@@ -176,13 +192,15 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Poké bowl med strimlad biff</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">
+                Poké bowl med strimlad biff
+              </h2>
+              <p class="text-base mb-4">
                 Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
                 sjögrässallad, cashewnötter, rostad lök, strimlad biff och
                 yakinikusås. Toppas med chilimajonnäs och sesamfrön.
               </p>
-              <p class="text-sm">135 / 139 kr</p>
+              <p class="text-base font-medium">135 / 139 kr</p>
             </div>
             <div class="w-[35%]">
               <img
@@ -197,13 +215,15 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Poké bowl med friterad kyckling</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">
+                Poké bowl med friterad kyckling
+              </h2>
+              <p class="text-base mb-4">
                 Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
                 sjögrässallad, cashewnötter, rostad lök och friterad kyckling.
                 Toppas med chilimajonnäs och sesamfrön.
               </p>
-              <p class="text-sm">135 / 139 kr</p>
+              <p class="text-base font-medium">135 / 139 kr</p>
             </div>
             <div class="w-[35%]">
               <img
@@ -218,13 +238,16 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Poké bowl med tofu (vegansk)</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">
+                Poké bowl med tofu
+                <i class="fas fa-light fa-leaf"></i>
+              </h2>
+              <p class="text-base mb-4">
                 Ris, sallad, gurka, avokado, edamamebönor, mango, morot,
                 sjögrässallad, cashewnötter, rostad lök och friterad tofu.
                 Toppas med en vegansk sås och sesamfrön.
               </p>
-              <p class="text-sm">130 / 135 kr</p>
+              <p class="text-base font-medium">130 / 135 kr</p>
             </div>
             <div class="w-[35%]">
               <img
@@ -259,7 +282,7 @@
             <i class="fas fa-thin fa-clock"></i> Öppettider
           </h3>
           <p class="text-sm">Måndag - Söndag</p>
-          <p class="text-sm">11:00 - 20:00</p>
+          <p class="text-base font-medium">11:00 - 20:00</p>
         </div>
       </div>
 

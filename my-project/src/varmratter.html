@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Sun Sushi</title>
+    <title>Sun Sushi - Varmrätter</title>
   </head>
-  <body class="flex flex-col min-h-screen bg-lightGray">
+  <body class="flex flex-col min-h-screen bg-lightGray font-noto">
     <header>
       <nav class="bg-black p-4">
         <div class="flex justify-between items-center">
@@ -122,7 +136,7 @@
     <main class="flex-1">
       <div>
         <h1
-          class="text-4xl md:text-5xl font-bold text-black text-center mt-8 mb-8"
+          class="text-5xl md:text-7xl text-black text-center mt-8 mb-8 font-teko font-bold"
         >
           Varmrätter
         </h1>
@@ -134,25 +148,25 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Pad Thai</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Pad Thai</h2>
+              <p class="text-base mb-4">
                 Risnudlar, ägg, purjolök, morot, vitlök och vitkål. Serveras med
                 lime och jordnötter.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/pad-thai.webp"
-                class="w-[100%]"
-                alt="En tallrik med kyckling pad thai"
+                class="hover:scale-125 duration-500 ease-in-out"
+                alt="En tallrik med kKyckling pad thai"
               />
             </div>
           </div>
@@ -161,24 +175,24 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Wokade Nudlar</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Wokade Nudlar</h2>
+              <p class="text-base mb-4">
                 Äggnudlar, purjolök, vitkål, vitlök, blomkål, broccoli, morot
                 och paprika.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/wokade-nudlar.webp"
-                class="w-[100%]"
+                class="hover:scale-125 duration-500 ease-in-out"
                 alt="En tallrik med wokade nudlar"
               />
             </div>
@@ -188,23 +202,23 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Grönsakswok</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Grönsakswok</h2>
+              <p class="text-base mb-4">
                 Broccoli, blomkål, morot, gullök och paprika. Serveras med ris.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/gronsakswok.webp"
-                class="w-[100%]"
+                class="hover:scale-125 duration-500 ease-in-out"
                 alt="En tallrik med grönsakswok"
               />
             </div>
@@ -214,25 +228,25 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Röd Curry</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Röd Curry</h2>
+              <p class="text-base mb-4">
                 Broccoli, blomkål, morot, paprika och bambuskott. Serveras med
                 ris.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/curry.webp"
-                class="w-[100%]"
-                alt="En tallrik med kyckling röd curry"
+                class="hover:scale-125 duration-500 ease-in-out"
+                alt="En tallrik med kKyckling röd curry"
               />
             </div>
           </div>
@@ -241,17 +255,17 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Yakiniku</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Yakiniku</h2>
+              <p class="text-base mb-4">
                 Strimlad biff, purjolök, gullök och yakinikusås. Serveras med
                 ris och sallad.
               </p>
-              <p class="text-sm">134 kr</p>
+              <p class="text-base">134 kr</p>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/yakiniku.webp"
-                class="w-[100%]"
+                class="hover:scale-125 duration-500 ease-in-out"
                 alt="En tallrik med biff yakiniku"
               />
             </div>
@@ -261,24 +275,24 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Stekt ris</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Stekt ris</h2>
+              <p class="text-base mb-4">
                 Ägg, broccoli, blomkål, morot och gullök. Serveras med rostad
                 lök.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/stekt-ris.webp"
-                class="w-[100%]"
+                class="hover:scale-125 duration-500 ease-in-out"
                 alt="En tallrik med stekt ris"
               />
             </div>
@@ -288,25 +302,25 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Cashewnötter</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Cashewnötter</h2>
+              <p class="text-base mb-4">
                 Broccoli, blomkål, morot, paprika, gullök och cashewnötter.
                 Serveras med ris.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/cashewnotter.webp"
-                class="w-[100%]"
-                alt="En tallrik med kyckling cashewnötter"
+                class="hover:scale-125 duration-500 ease-in-out"
+                alt="En tallrik med kKyckling cashewnötter"
               />
             </div>
           </div>
@@ -315,25 +329,25 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Teriyaki</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Teriyaki</h2>
+              <p class="text-base mb-4">
                 Broccoli, blomkål, morot, paprika, gullök, vitlök, teriyakisås,
                 chili och sesamfrön. Serveras med ris.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/teriyaki.webp"
-                class="w-[100%]"
-                alt="En tallrik med kyckling teriyaki"
+                class="hover:scale-125 duration-500 ease-in-out"
+                alt="En tallrik med kKyckling teriyaki"
               />
             </div>
           </div>
@@ -342,25 +356,27 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Sichuan</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">
+                Sichuan <i class="fa-solid fa-pepper-hot"></i>
+              </h2>
+              <p class="text-base mb-4">
                 Broccoli, blomkål, morot, paprika, gullök, chili och sichuansås.
                 Serveras med ris.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/sichuan.webp"
-                class="w-[100%]"
-                alt="En tallrik med kyckling sichuan"
+                class="hover:scale-125 duration-500 ease-in-out"
+                alt="En tallrik med kKyckling sichuan"
               />
             </div>
           </div>
@@ -369,25 +385,25 @@
             class="border-b border-black border-dashed hover:border-[#a50601] py-4 flex items-center gap-4"
           >
             <div class="flex flex-col justify-between w-[65%]">
-              <h2 class="text-lg font-bold">Gong Bao</h2>
-              <p class="italic text-md mb-4">
+              <h2 class="font-teko text-2xl font-bold">Gong Bao</h2>
+              <p class="text-base mb-4">
                 Gullök, purjolök, chili, ingefära och jordnötter. Serveras med
                 ris.
               </p>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Kyckling / Tofu</p>
-                <span class="text-sm">129 / 134 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Kyckling / Tofu</p>
+                <span class="text-base">129 / 134 kr</span>
               </div>
-              <div class="flex justify-between w-48">
-                <p class="text-sm">Biff / Räkor</p>
-                <span class="text-sm">139 / 144 kr</span>
+              <div class="flex justify-between w-52">
+                <p class="text-base">Biff / Räkor</p>
+                <span class="text-base">139 / 144 kr</span>
               </div>
             </div>
             <div class="w-[35%]">
               <img
                 src="images/varmratter/gongbao.webp"
-                class="w-[100%]"
-                alt="En tallrik med kyckling gong bao"
+                class="hover:scale-125 duration-500 ease-in-out"
+                alt="En tallrik med kKKyckling gong bao"
               />
             </div>
           </div>
