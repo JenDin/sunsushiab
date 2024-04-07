@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Sun Sushi</title>
   </head>
-  <body class="flex flex-col min-h-screen bg-lightGray">
+  <body class="font-noto flex flex-col min-h-screen bg-lightGray">
     <header>
       <nav class="bg-black p-4">
         <div class="flex justify-between items-center">
@@ -111,22 +111,22 @@
           <div class="flex flex-col items-center">
             <a
               href="sushi.html"
-              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              class="text-lg text-white py-2 hover:underline decoration-[#a50601] decoration-2"
               >Sushi</a
             >
             <a
               href="pokebowl.html"
-              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              class="text-lg text-white py-2 hover:underline decoration-[#a50601] decoration-2"
               >Poké bowl</a
             >
             <a
               href="varmratter.html"
-              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              class="text-lg text-white py-2 hover:underline decoration-[#a50601] decoration-2"
               >Varmrätter</a
             >
             <a
               href="boba.html"
-              class="text-white py-2 hover:underline decoration-[#a50601] decoration-2"
+              class="text-lg text-white py-2 hover:underline decoration-[#a50601] decoration-2"
               >Boba Tea</a
             >
           </div>
@@ -135,7 +135,7 @@
     </header>
     <main class="flex-1">
       <section
-        class="bg-bgMobile lg:bg-bgDesktop bg-cover bg-center bg-no-repeat h-screen text-white md:relative"
+        class="bg-bgMobile lg:bg-bgDesktop bg-cover bg-center bg-no-repeat h-[900px] lg:h-screen text-white md:relative"
       >
         <div
           class="ml-auto flex flex-col justify-center items-center p-4 md:pt-40 lg:absolute right-56"
@@ -146,7 +146,7 @@
             A taste of Asia
           </h1>
           <p
-            class="font-noto text-xl md:text-[1.6rem] flex justify-center items-center mb-4 p-4 text-center"
+            class="text-xl md:text-[1.6rem] flex justify-center items-center mb-4 p-4 text-center"
           >
             Utsökt asiatisk mat på centralstationen i Göteborg
           </p>
@@ -154,7 +154,7 @@
           <div class="w-[200px] m-auto">
             <a
               href="sushi.html"
-              class="font-noto bg-transparent text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-[#a50601]"
+              class="bg-transparent text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-[#a50601]"
             >
               Upptäck vår sushi
               <i class="fas fa-thin fa-arrow-right"></i>
@@ -164,28 +164,28 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-black text-white p-8">
+    <footer class="bg-black text-white p-8 no-underline">
       <div class="md:flex justify-center gap-12">
         <div class="mb-6">
-          <h3 class="text-md font-bold mb-1">
+          <h3 class="text-base md:text-lg font-bold mb-1">
             <i class="fas fa-thin fa-location-dot"></i> Adress
           </h3>
-          <p class="text-sm">Centralstationen</p>
-          <p class="text-sm">Drottningtorget 4</p>
-          <p class="text-sm">411 03 Göteborg</p>
+          <p class="text-sm md:text-base">Centralstationen</p>
+          <p class="text-sm md:text-base">Drottningtorget 4</p>
+          <p class="text-sm md:text-base">411 03 Göteborg</p>
         </div>
         <div class="mb-6">
-          <h3 class="text-md font-bold mb-1">
+          <h3 class="text-base md:text-lg font-bold mb-1">
             <i class="fas fa-thin fa-phone"></i> Telefon
           </h3>
-          <p class="text-sm">031 - 15 91 80</p>
+          <p class="text-sm md:text-base">031 - 15 91 80</p>
         </div>
         <div>
-          <h3 class="text-,d font-bold mb-1">
+          <h3 class="text-base md:text-lg font-bold mb-1">
             <i class="fas fa-thin fa-clock"></i> Öppettider
           </h3>
-          <p class="text-sm">Måndag - Söndag</p>
-          <p class="text-sm">11:00 - 20:00</p>
+          <p class="text-sm md:text-base">Måndag - Söndag</p>
+          <p class="text-sm md:text-base">11:00 - 20:00</p>
         </div>
       </div>
 
@@ -193,9 +193,7 @@
         class="md:w-96 md:m-auto my-6 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"
       />
 
-      <p class="md:text-center md:mt-4">
-        Vi finns på Foodora, Uber Eats och Wolt!
-      </p>
+      <p class="md:text-center md:mt-4">Vi finns på Foodora & Wolt!</p>
     </footer>
     <script type="module" src="./js/main.js"></script>
   </body>

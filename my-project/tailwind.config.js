@@ -7,8 +7,8 @@ export default {
         lightGray: "#f8f9fa",
       },
       backgroundImage: {
-        bgDesktop: "url(images/homepage-bg.jpg)",
-        bgMobile: "url(images/homepage-bg-mobile.jpg)",
+        bgDesktop: "url(/images/homepage-bg.jpg)",
+        bgMobile: "url(/images/homepage-bg-mobile.jpg)",
       },
       fontFamily: {
         teko: ["Teko", "sans-serif"],
